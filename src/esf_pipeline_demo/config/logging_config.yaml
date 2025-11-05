@@ -1,0 +1,64 @@
+version: 1
+disable_existing_loggers: False
+
+formatters:
+  verbose:
+    format: "%(asctime)s %(levelname)-8s [%(name)s:%(lineno)d] %(message)s"
+    datefmt: "%Y-%m-%d %H:%M:%S"
+  simple:
+    format: "%(levelname)-8s %(message)s"
+
+handlers:
+  console_info:
+    class: logging.StreamHandler
+    formatter: simple
+    level: INFO
+    stream: ext://sys.stdout
+
+  console_error:
+    class: logging.StreamHandler
+    formatter: simple
+    level: WARNING
+    stream: ext://sys.stderr
+
+  file_info:
+    class: logging.handlers.TimedRotatingFileHandler
+    formatter: verbose
+    level: INFO
+    filename: logs/info.log
+    when: midnight
+    backupCount: 7
+    encoding: utf8
+
+  file_debug:
+    class: logging.handlers.TimedRotatingFileHandler
+    formatter: verbose
+    level: DEBUG
+    filename: logs/debug.log
+    when: midnight
+    backupCount: 7
+    encoding: utf8
+
+  file_error:
+    class: logging.handlers.RotatingFileHandler
+    formatter: verbose
+    level: WARNING
+    filename: logs/error.log
+    maxBytes: 5242880  # 5 MB
+    backupCount: 7
+    encoding: utf8
+
+loggers:
+  esf_pipeline:
+    level: DEBUG
+    handlers: [file_info, file_debug, console_info, console_error, file_error]
+    propagate: False
+
+  third_party:
+    level: WARNING
+    handlers: [file_error]
+    propagate: False
+
+root:
+  level: WARNING
+  handlers: [console_error, file_error]

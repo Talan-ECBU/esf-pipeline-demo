@@ -1,0 +1,153 @@
+Group A:
+  query_list:
+    - "Apple Phone Plug Charger"
+    - "Huawei Phone Plug Charger"
+    - "Android Phone Plug Charger"
+    - "Ultrafast Phone Plug Charger"
+    - "E-Bike Charger"
+    - "E-Scooter Charger"
+    - "Plug-in chargers"
+    - "Plug in Air Purifier"
+    - "Laptop Charger"
+  required_image: true
+  irrelevant_categories:
+    - "Air Purifier Filters"
+    - "Bathroom Cleaning Brushes"
+    - "Bike Backpacks"
+    - "Bike Covers"
+    - "Cycling Glasses"
+    - "Cycling Taillights"
+    - "GPS Chargers & Adapters"
+    - "International Power Adapters"
+    - "Mobile Phone Anti-Dust Plugs"
+    - "Mobile Phone Automobile Chargers"
+  exact_voltage: true
+
+Group B:
+  query_list:
+    - "Extension lead"
+    - "Outdoor Extension lead"
+    - "Smart plug"
+  required_image: true
+  irrelevant_categories:
+    - "Home Fragrance"
+    - "International Power Adapters"
+    - "Laptop Chargers & Power Supplies"
+    - "Mobile Phone Anti-Dust Plugs"
+    - "Mobile Phone Mains Chargers"
+    - "Power Monitors"
+    - "Power Toothbrush Chargers"
+    - "Radiators"
+    - "Robotic Lawn Mowers"
+    - "Scented Oil Diffusers"
+    - "Single Window Curtain Rods"
+    - "Smartwatch Screen Protectors & Foils"
+    - "Surface Mounted Cases"
+    - "Surface Mounted Junction Boxes"
+    - "Unknown"
+    - "USB Cables"
+  exact_amperage: true
+
+
+Group C:
+  query_list:
+    - "Portable plug in immersion heater"
+    - "Mini plug in immersion heater"
+    - "Mini portable plug in immersion heater"
+    - "Waterproof speakers"
+    - "Outdoor Extension Lead"
+  required_image: false
+  irrelevant_categories:
+    - "Radiators"
+    - "Unknown"
+    - "USB Cables"
+  exact_voltage: true
+  # USB Search
+  high_volts_only: true
+
+Group D:
+  query_list:
+    - "E-Bike Conversion Kit"
+    - "Desktop Electric Fan"
+    - "Electric Blanket"
+    - "Electronic Suitcase"
+    - "Air Fryer"
+    - "Drone"
+    - "Hair Dryer"
+    - "Electric Screwdriver"
+    - "Blender"
+    - "Mains Powered Alarm Clock"
+    - "Floor Standing Electric Fan"
+    - "Head Shaver"
+    - "Kettle"
+    - "Folding Electric Treadmill"
+    - "Steam Iron"
+    - "Desk Monitor"
+    - "Slow Cooker"
+    - "Rice Cooker"
+    - "Portable Charger"
+    - "Vacuum Cleaner"
+    - "Hair Straighteners"
+    - "Food Processor"
+    - "Electric Razor"
+  required_image: false
+  irrelevant_categories:
+    - "Action Camera Cases"
+    - "Bags, Covers & Cases"
+    - "Barbecuing & Grilling eBooks"
+    - "Bedding & Linens"
+    - "Bike Brakes"
+    - "Cable Organiser Bags"
+    - "Dancehall & Ragga"
+    - "Desks"
+    - "Doctor Playsets"
+    - "Drill Bit Sets"
+    - "Fashion"
+    - "Fish Scales"
+    - "Hair Dryer Holders"
+    - "Hard Drive Bags & Cases"
+    - "Laptop Backpacks"
+    - "Laptop Computer Stands"
+    - "Laptop Roller Cases"
+    - "Luggage Cosmetic Cases"
+    - "Monitor Accessories"
+    - "Music Stands"
+    - "Packing Organisers"
+    - "Screwdriver Bit Sets"
+    - "Suitcase Covers"
+    - "Toiletry Bags"
+    - "Tool Bags"
+    - "Unknown"
+    - "Wheelchair & Mobility Scooter Bags & Baskets"
+    - "Wheelchair & Mobility Scooter Cushions"
+  exact_voltage: true
+  # USB Search
+  high_volts_only: true
+
+Group E:
+  query_list:
+    - "Travel Adaptor"
+    - "Cable Reel"
+  required_image: true
+  irrelevant_categories:
+    - "Agricultural Fencing"
+    - "Audio & Video Adapters"
+    - "Cable Insertion & Extraction Tools"
+    - "Cat 5e Ethernet Cables"
+    - "Cat 6 Ethernet Cables"
+    - "Cat 7 Ethernet Cables"
+    - "Coaxial Cables (Electronics & Photo)"
+    - "Digital Interface Cables"
+    - "Electrical Cable Wall Clips"
+    - "Electrical Wire"
+    - "Ethernet Cables"
+    - "Garage Wall Racks"
+    - "Garden Hose Reels"
+    - "Hi-Fi & Home Audio Cables"
+    - "Line Spooling Accessories"
+    - "Motorhome Parts & Accessories"
+    - "Patch Cables"
+    - "Phone Cables"
+    - "Speaker Cables"
+    - "Switches & Dimmers"
+    - "Unknown"

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "location": {
+      "value": "uksouth"
+    },
+    "sqlLocation": {
+      "value": "uksouth"
+    },
+    "storageAccountName": {
+      "value": "esfonlinesafety"
+    },
+    "sqlServerName": {
+      "value": "esfonlinesafety-sqlserver-001"
+    },
+    "sqlAdminUsername": {
+      "value": "sqladmin"
+    },
+    "sqlAdminPassword": {
+      "value": "Gemserv2025"
+    }
+  }
+}
